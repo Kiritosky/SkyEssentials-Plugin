@@ -1,0 +1,4 @@
+name: SkyEssentials
+version: '${project.version}'
+main: me.jxstkirito.skyessentials.SkyEssentials
+api-version: '1.20'
