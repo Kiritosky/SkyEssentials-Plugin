@@ -2,3 +2,8 @@ name: SkyEssentials
 version: '${project.version}'
 main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
+commands:
+  god:
+    description: become invincible
+    usage: /<command>
+

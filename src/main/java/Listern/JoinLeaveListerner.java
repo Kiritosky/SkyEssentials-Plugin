@@ -1,4 +1,4 @@
-package java.Listernes;
+package Listern;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -14,9 +14,9 @@ public class JoinLeaveListerner implements Listener {
         Player player = e.getPlayer();
 
         if (player.hasPlayedBefore()){
-            e.setJoinMessage(ChatColor.YELLOW + " " + ChatColor.BOLD + "Welcome back to the server " + ChatColor.YELLOW + " " + ChatColor.BOLD + player.getDisplayName() + ChatColor.YELLOW + " " + ChatColor.BOLD + " have fun");
+            e.setJoinMessage(ChatColor.YELLOW + " " + ChatColor.BOLD + "Welcome back to the server" + ChatColor.YELLOW + " " + ChatColor.BOLD + player.getDisplayName() + ChatColor.YELLOW + " " + ChatColor.BOLD + "have fun");
         } else {
-            e.setJoinMessage(ChatColor.GREEN + " " + ChatColor.BOLD + player.getDisplayName() + ChatColor.GREEN + " " + ChatColor.BOLD + " Joined the first time everyone say Welcome");
+            e.setJoinMessage(ChatColor.GREEN + " " + ChatColor.BOLD + player.getDisplayName() + ChatColor.GREEN + " " + ChatColor.BOLD + "Joined the first time everyone say Welcome");
         }
         System.out.println(ChatColor.YELLOW + " " + ChatColor.BOLD + player.getDisplayName() + ChatColor.YELLOW + " " + ChatColor.BOLD + "has joined the server");
 
