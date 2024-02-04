@@ -26,3 +26,5 @@ Feel free to contribute to the project by submitting pull requests. Refer to the
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+NOTE: This plugin is still in development and may undergo significant changes. Use with caution in a production environment.
