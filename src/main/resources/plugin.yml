@@ -6,4 +6,13 @@ commands:
   god:
     description: become invincible
     usage: /<command>
+    aliases:
+      - unsterblich
+      - gott
+  feed:
+    description: you get feeded
+    usage: /<command>
+    aliases:
+      - feedme
+      - nohunger
 

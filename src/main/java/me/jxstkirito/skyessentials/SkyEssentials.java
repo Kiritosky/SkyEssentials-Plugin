@@ -1,4 +1,5 @@
 package me.jxstkirito.skyessentials;
+import Commands.FeedCommand;
 import Commands.GodCommand;
 import Listern.JoinLeaveListerner;
 import org.bukkit.ChatColor;
@@ -18,6 +19,7 @@ public final class SkyEssentials extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(new JoinLeaveListerner(), this);
 
         getCommand("god").setExecutor(new GodCommand());
+        getCommand("feed").setExecutor(new FeedCommand());
     }
 
 
