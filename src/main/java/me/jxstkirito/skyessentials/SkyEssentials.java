@@ -1,32 +1,27 @@
 package me.jxstkirito.skyessentials;
-import Commands.FeedCommand;
-import Commands.GodCommand;
-import Listern.JoinLeaveListerner;
+
+import me.jxstkirito.skyessentials.commands.FeedCommand;
+import me.jxstkirito.skyessentials.commands.GodCommand;
+import me.jxstkirito.skyessentials.listener.JoinListerner;
+import me.jxstkirito.skyessentials.trollMenu.Commands.MenuCommand;
 import org.bukkit.ChatColor;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import java.util.logging.Level;
 
 
-public final class SkyEssentials extends JavaPlugin implements Listener {
+public final class SkyEssentials extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
         getServer().getLogger().log(Level.INFO,ChatColor.GREEN + "SkyEssentials plugin started");
-
-        getServer().getPluginManager().registerEvents(new JoinLeaveListerner(), this);
-
+        getServer().getPluginManager().registerEvents(new JoinListerner(), this);
         getCommand("god").setExecutor(new GodCommand());
         getCommand("feed").setExecutor(new FeedCommand());
+        getCommand("trollmenu").setExecutor(new MenuCommand());
     }
-
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
-
         getServer().getLogger().log(Level.INFO,ChatColor.RED + "SkyEssentials plugin stopped");
     }
 }

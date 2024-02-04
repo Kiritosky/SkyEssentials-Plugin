@@ -3,6 +3,9 @@ version: '${project.version}'
 main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
+  trollmenu:
+    description: open a troll menu to have fun with other players
+    usage: /<command>
   god:
     description: become invincible
     usage: /<command>
