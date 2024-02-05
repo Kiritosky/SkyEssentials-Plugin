@@ -1,8 +1,8 @@
 # SkyEssentials - Minecraft Plugin
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![SpigotMC](https://img.shields.io/badge/Spigot-1.16.5-orange)](https://www.spigotmc.org/)
-[![Java](https://img.shields.io/badge/Java-8-blue)](https://www.java.com/)
+[![SpigotMC](https://img.shields.io/badge/Spigot-1.20.4-orange)](https://www.spigotmc.org/)
+[![Java](https://img.shields.io/badge/Java-17-blue)](https://www.java.com/)
 
 SkyEssentials is a feature-rich Minecraft plugin designed to enhance the gameplay experience. With a focus on essential and practical features, SkyEssentials aims to provide server administrators and players with tools to improve their time .
 
