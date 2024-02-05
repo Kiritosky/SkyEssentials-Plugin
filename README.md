@@ -9,7 +9,7 @@ SkyEssentials is a feature-rich Minecraft plugin designed to enhance the gamepla
 
 ## Installation
 
-1. Download the latest release from the [Releases](https://github.com/kiritosky/SkyEssentials-plugin/releases) page.
+1. Download the latest release from the [Releases](https://github.com/Kiritosky/SkyEssentials-Plugin/releases) page.
 
 2. Place the JAR file in the `plugins` folder of your Spigot server.
 
@@ -19,7 +19,7 @@ SkyEssentials is a feature-rich Minecraft plugin designed to enhance the gamepla
 
 ## Issues and Contributions
 
-If you encounter any issues or have suggestions for improvements, please create a new [issue](https://github.com/kiritosky/SkyEssentials-plugin/issues).
+If you encounter any issues or have suggestions for improvements, please create a new [issue](https://github.com/Kiritosky/SkyEssentials-Plugin/issues).
 
 Feel free to contribute to the project by submitting pull requests. Refer to the [Contribution Guidelines](CONTRIBUTING.md) for more details.
 
