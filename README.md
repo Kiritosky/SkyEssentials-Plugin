@@ -15,8 +15,6 @@ SkyEssentials is a feature-rich Minecraft plugin designed to enhance the gamepla
 
 3. Restart your server.
 
-4. Configure the plugin to your liking in the `config.yml` file generated in the `plugins/SkyEssentials` directory.
-
 ## Issues and Contributions
 
 If you encounter any issues or have suggestions for improvements, please create a new [issue](https://github.com/Kiritosky/SkyEssentials-Plugin/issues).
