@@ -33,7 +33,7 @@ public class GameModeCommand implements CommandExecutor {
                     sender.sendMessage(ChatColor.RED + "Usage: /gm <0|1|2>");
                 }
 
-                return false;
+                return true;
             }
         }
 

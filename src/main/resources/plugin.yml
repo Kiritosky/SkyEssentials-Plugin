@@ -4,25 +4,30 @@ main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
   heal:
+    permission: SkyEssentials.heal
     description: heals you
     usage: /<command>
     aliases:
       - healme
   gm:
+    permission: SkyEssentials.gm
     description: switch gamemodes
     usage: /<command>
     aliases:
       - gamemode
   trollmenu:
+    permission: SkyEssentials.trollmenu
     description: open a troll menu to have fun with other players
     usage: /<command>
   god:
+    permission: SkyEssentials.god
     description: become invincible
     usage: /<command>
     aliases:
       - unsterblich
       - gott
   feed:
+    permission: SkyEssentials.feed
     description: you get feeded
     usage: /<command>
     aliases:
