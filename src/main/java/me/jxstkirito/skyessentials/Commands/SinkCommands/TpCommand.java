@@ -1,5 +1,6 @@
-package me.jxstkirito.skyessentials.commands;
+package me.jxstkirito.skyessentials.Commands.SinkCommands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -12,21 +13,21 @@ public class TpCommand implements CommandExecutor {
 
         if (!(sender instanceof Player player)) return true;
         if (!(sender.hasPermission("SkyEssentials.tp"))) {
-            player.sendMessage("You do not have permission to use this command");
+            player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You do not have permission to use this command");
             return true;
         } else {
             if (strings.length == 0) {
-                player.sendMessage("Usage: /tp <player>");
+                player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "Usage: /tp <player>");
                 return true;
             }
             if (strings.length == 1) {
                 Player target = player.getServer().getPlayer(strings[0]);
                 if (target == null) {
-                    player.sendMessage("Player not found");
+                    player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "Player not found");
                     return true;
                 }
                 player.teleport(target);
-                player.sendMessage("Teleported to " + target.getName());
+                player.sendMessage(ChatColor.BOLD + " " + ChatColor.GREEN + "Teleported to " + target.getName());
             }
         }
 

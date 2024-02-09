@@ -1,4 +1,4 @@
-package me.jxstkirito.skyessentials.commands;
+package me.jxstkirito.skyessentials.Commands.SinkCommands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -14,7 +14,7 @@ public class GameModeCommand implements CommandExecutor {
 
             if (!(sender instanceof Player player)) {
             if (!sender.hasPermission("SkyEssentials.gm")) {
-                sender.sendMessage(ChatColor.RED + "You dont have permission to use this command");
+                sender.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You dont have permission to use this command");
             }
                 return true;
             } else {

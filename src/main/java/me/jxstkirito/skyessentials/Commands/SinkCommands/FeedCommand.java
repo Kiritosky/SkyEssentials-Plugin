@@ -1,4 +1,4 @@
-package me.jxstkirito.skyessentials.commands;
+package me.jxstkirito.skyessentials.Commands.SinkCommands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -13,7 +13,7 @@ public class FeedCommand implements CommandExecutor {
 
         if (!(sender instanceof Player player)) return true;
         if (!sender.hasPermission("SkyEssentials.feed")) {
-            player.sendMessage(ChatColor.RED + "You do not have permission to use this command");
+            player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You do not have permission to use this command");
             return true;
         } else {
             player.setFoodLevel(20);

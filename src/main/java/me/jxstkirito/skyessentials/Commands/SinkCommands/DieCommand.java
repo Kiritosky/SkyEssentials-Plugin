@@ -1,5 +1,6 @@
-package me.jxstkirito.skyessentials.commands;
+package me.jxstkirito.skyessentials.Commands.SinkCommands;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -12,11 +13,11 @@ public class DieCommand implements CommandExecutor {
 
         if (!(sender instanceof Player player)) return true;
         if (!(sender.hasPermission("SkyEssentials.die"))) {
-            player.sendMessage("You do not have permission to use this command");
+            player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You do not have permission to use this command");
             return true;
         } else {
             player.setHealth(0);
-            player.sendMessage("You died");
+            player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You have died");
         }
         return true;
     }

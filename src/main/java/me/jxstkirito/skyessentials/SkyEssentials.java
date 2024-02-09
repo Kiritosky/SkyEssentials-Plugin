@@ -1,6 +1,9 @@
 package me.jxstkirito.skyessentials;
 
-import me.jxstkirito.skyessentials.commands.*;
+import me.jxstkirito.skyessentials.Commands.SinkCommands.*;
+import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.AnvilCommand;
+import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.EnderchestCommand;
+import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.WorkbenchCommand;
 import me.jxstkirito.skyessentials.listener.JoinListerner;
 import me.jxstkirito.skyessentials.listener.LeaveListener;
 import me.jxstkirito.skyessentials.listener.NoCreeperDamageListener;
@@ -24,6 +27,10 @@ public final class SkyEssentials extends JavaPlugin {
         getCommand("die").setExecutor(new DieCommand());
         getCommand("fly").setExecutor(new FlyCommand());
         getCommand("tp").setExecutor(new TpCommand());
+        getCommand("day").setExecutor(new DayCommand());
+        getCommand("wb").setExecutor(new WorkbenchCommand());
+        getCommand("enderchest").setExecutor(new EnderchestCommand());
+        getCommand("anvil").setExecutor(new AnvilCommand());
     }
 
     @Override

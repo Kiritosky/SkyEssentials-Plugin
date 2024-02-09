@@ -3,6 +3,22 @@ version: '${project.version}'
 main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
+  Workbench:
+    permission: SkyEssentials.workbench
+    description: opens a workbench
+    usage: /<command>
+  Enderchest:
+    permission: SkyEssentials.enderchest
+    description: opens an enderchest
+    usage: /<command>
+  Anvil:
+    permission: SkyEssentials.anvil
+    description: opens an anvil
+    usage: /<command>
+  day:
+    permission: SkyEssentials.day
+    description: sets the time to day
+    usage: /<command>
   tp:
     permission: SkyEssentials.tp
     description: teleport to a player
