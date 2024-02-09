@@ -12,6 +12,10 @@ public class GodCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] strings) {
 
         if (!(sender instanceof Player player)) return true;
+        if (!sender.hasPermission("SkyEssentials.god")) {
+            player.sendMessage(ChatColor.RED + "You do not have permission to use this command");
+            return true;
+        }
 
         if (player.isInvulnerable()){
                 player.setInvulnerable(false);

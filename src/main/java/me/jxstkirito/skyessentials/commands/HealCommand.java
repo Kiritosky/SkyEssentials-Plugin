@@ -13,6 +13,10 @@ public class HealCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] strings) {
 
         if (!(sender instanceof Player player)) return true;
+        if (!sender.hasPermission("SkyEssentials.heal")) {
+            player.sendMessage(ChatColor.RED + "You do not have permission to use this command");
+            return true;
+        }
         player.setHealth(20);
         player.sendMessage(ChatColor.GREEN + "You got Healed");
 

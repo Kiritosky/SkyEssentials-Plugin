@@ -13,8 +13,10 @@ public class GameModeCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
             if (!(sender instanceof Player player)) {
-                sender.sendMessage(ChatColor.RED + " Du musst ein spieler sein");
-                return false;
+            if (!sender.hasPermission("SkyEssentials.gm")) {
+                sender.sendMessage(ChatColor.RED + "You dont have permission to use this command");
+            }
+                return true;
             } else {
                 if (args.length == 1) {
                     if (args[0].equalsIgnoreCase("1")) {

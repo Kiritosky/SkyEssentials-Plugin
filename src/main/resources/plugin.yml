@@ -3,6 +3,16 @@ version: '${project.version}'
 main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
+    fly:
+        permission: SkyEssentials.fly
+        description: enables fly
+        usage: /<command>
+  die:
+    permission: SkyEssentials.die
+    description: kills you
+    usage: /<command>
+    aliases:
+      - killme
   heal:
     permission: SkyEssentials.heal
     description: heals you
@@ -15,10 +25,6 @@ commands:
     usage: /<command>
     aliases:
       - gamemode
-  trollmenu:
-    permission: SkyEssentials.trollmenu
-    description: open a troll menu to have fun with other players
-    usage: /<command>
   god:
     permission: SkyEssentials.god
     description: become invincible
