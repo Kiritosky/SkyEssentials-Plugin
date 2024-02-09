@@ -23,6 +23,7 @@ public final class SkyEssentials extends JavaPlugin {
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("die").setExecutor(new DieCommand());
         getCommand("fly").setExecutor(new FlyCommand());
+        getCommand("tp").setExecutor(new TpCommand());
     }
 
     @Override

@@ -3,6 +3,10 @@ version: '${project.version}'
 main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
+  tp:
+    permission: SkyEssentials.tp
+    description: teleport to a player
+    usage: /<command> <player>
   fly:
         permission: SkyEssentials.fly
         description: enables fly
