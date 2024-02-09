@@ -9,5 +9,5 @@ public class NoCreeperDamageListener implements Listener {
     @EventHandler
     public void onEntityExplode(EntityExplodeEvent event) {
         event.blockList().clear();
-    }
+        }
 }
