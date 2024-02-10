@@ -17,7 +17,7 @@ public class DieCommand implements CommandExecutor {
             return true;
         } else {
             player.setHealth(0);
-            player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You have died");
+            player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You have opted to kill yourself");
         }
         return true;
     }

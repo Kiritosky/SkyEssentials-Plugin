@@ -1,5 +1,7 @@
 package me.jxstkirito.skyessentials;
 
+import me.jxstkirito.skyessentials.Commands.AdminFunCommands.FireCommand;
+import me.jxstkirito.skyessentials.Commands.AdminFunCommands.InvseeComand;
 import me.jxstkirito.skyessentials.Commands.SinkCommands.*;
 import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.AnvilCommand;
 import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.EnderchestCommand;
@@ -31,6 +33,8 @@ public final class SkyEssentials extends JavaPlugin {
         getCommand("wb").setExecutor(new WorkbenchCommand());
         getCommand("enderchest").setExecutor(new EnderchestCommand());
         getCommand("anvil").setExecutor(new AnvilCommand());
+        getCommand("burn").setExecutor(new FireCommand());
+        getCommand("invsee").setExecutor(new InvseeComand());
     }
 
     @Override

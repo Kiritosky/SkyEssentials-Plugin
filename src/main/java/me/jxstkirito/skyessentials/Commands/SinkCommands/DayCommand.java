@@ -12,7 +12,7 @@ public class DayCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] strings) {
 
         if (!(sender instanceof Player player)) return true;
-        if (!sender.hasPermission("SkyEssentials.day")) {
+        if (!(sender.hasPermission("SkyEssentials.day"))) {
             player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You do not have permission to use this command");
             return true;
         }
