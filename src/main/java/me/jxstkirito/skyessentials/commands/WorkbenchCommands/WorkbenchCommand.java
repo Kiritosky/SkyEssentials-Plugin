@@ -1,5 +1,4 @@
-package me.jxstkirito.skyessentials.Commands.SinkCommands;
-
+package me.jxstkirito.skyessentials.commands.WorkbenchCommands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -7,19 +6,20 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class HealCommand implements CommandExecutor {
+public class WorkbenchCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] strings) {
 
         if (!(sender instanceof Player player)) return true;
-        if (!(sender.hasPermission("SkyEssentials.heal"))) {
+        if (!sender.hasPermission("SkyEssentials.workbench")) {
             player.sendMessage(ChatColor.BOLD + " " + ChatColor.RED + "You do not have permission to use this command");
             return true;
         }
-        player.setHealth(20);
-        player.sendMessage(ChatColor.GREEN + "You got Healed");
+        player.openWorkbench(null, true);
+        player.sendMessage(ChatColor.GREEN + "You opened the workbench");
 
         return true;
     }
+
 }

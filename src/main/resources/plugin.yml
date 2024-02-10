@@ -3,6 +3,10 @@ version: '${project.version}'
 main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
+  vanish:
+    permission: SkyEssentials.Admin.vanish
+    description: vanish
+    usage: /<command>
   invsee:
     permission: SkyEssentials.Admin.invsee
     description: opens the inventory of a player

@@ -1,4 +1,4 @@
-package me.jxstkirito.skyessentials.Commands.SinkCommands;
+package me.jxstkirito.skyessentials.commands.SinkCommands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;

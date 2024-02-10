@@ -1,11 +1,12 @@
 package me.jxstkirito.skyessentials;
 
-import me.jxstkirito.skyessentials.Commands.AdminFunCommands.FireCommand;
-import me.jxstkirito.skyessentials.Commands.AdminFunCommands.InvseeComand;
-import me.jxstkirito.skyessentials.Commands.SinkCommands.*;
-import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.AnvilCommand;
-import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.EnderchestCommand;
-import me.jxstkirito.skyessentials.Commands.WorkbenchCommands.WorkbenchCommand;
+import me.jxstkirito.skyessentials.commands.AdminFunCommands.FireCommand;
+import me.jxstkirito.skyessentials.commands.AdminFunCommands.InvseeComand;
+import me.jxstkirito.skyessentials.commands.AdminFunCommands.VanishCommand;
+import me.jxstkirito.skyessentials.commands.SinkCommands.*;
+import me.jxstkirito.skyessentials.commands.WorkbenchCommands.AnvilCommand;
+import me.jxstkirito.skyessentials.commands.WorkbenchCommands.EnderchestCommand;
+import me.jxstkirito.skyessentials.commands.WorkbenchCommands.WorkbenchCommand;
 import me.jxstkirito.skyessentials.listener.JoinListerner;
 import me.jxstkirito.skyessentials.listener.LeaveListener;
 import me.jxstkirito.skyessentials.listener.NoCreeperDamageListener;
@@ -30,11 +31,12 @@ public final class SkyEssentials extends JavaPlugin {
         getCommand("fly").setExecutor(new FlyCommand());
         getCommand("tp").setExecutor(new TpCommand());
         getCommand("day").setExecutor(new DayCommand());
-        getCommand("wb").setExecutor(new WorkbenchCommand());
-        getCommand("enderchest").setExecutor(new EnderchestCommand());
-        getCommand("anvil").setExecutor(new AnvilCommand());
-        getCommand("burn").setExecutor(new FireCommand());
+        getCommand("Workbench").setExecutor(new WorkbenchCommand());
+        getCommand("Enderchest").setExecutor(new EnderchestCommand());
+        getCommand("Anvil").setExecutor(new AnvilCommand());
+        getCommand("Burn").setExecutor(new FireCommand());
         getCommand("invsee").setExecutor(new InvseeComand());
+        getCommand("vanish").setExecutor(new VanishCommand());
     }
 
     @Override
