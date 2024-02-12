@@ -1,9 +1,11 @@
 package me.jxstkirito.skyessentials;
 
+import me.jxstkirito.skyessentials.commands.AdminFunCommands.ClearInventoryCommand;
 import me.jxstkirito.skyessentials.commands.AdminFunCommands.FireCommand;
 import me.jxstkirito.skyessentials.commands.AdminFunCommands.InvseeComand;
 import me.jxstkirito.skyessentials.commands.AdminFunCommands.VanishCommand;
 import me.jxstkirito.skyessentials.commands.SinkCommands.*;
+import me.jxstkirito.skyessentials.commands.WarpSystem.WarpCommand;
 import me.jxstkirito.skyessentials.commands.WorkbenchCommands.AnvilCommand;
 import me.jxstkirito.skyessentials.commands.WorkbenchCommands.EnderchestCommand;
 import me.jxstkirito.skyessentials.commands.WorkbenchCommands.WorkbenchCommand;
@@ -37,6 +39,9 @@ public final class SkyEssentials extends JavaPlugin {
         getCommand("Burn").setExecutor(new FireCommand());
         getCommand("invsee").setExecutor(new InvseeComand());
         getCommand("vanish").setExecutor(new VanishCommand());
+        getCommand("clearinventory").setExecutor(new ClearInventoryCommand());
+        getCommand("weather").setExecutor(new WeatherCommand());
+        getCommand("warp").setExecutor(new WarpCommand());
     }
 
     @Override

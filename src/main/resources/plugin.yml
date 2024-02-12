@@ -3,6 +3,18 @@ version: '${project.version}'
 main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
+  warp:
+    permission: SkyEssentials.warp
+    description: warps you to a location
+    usage: /<command> <warp>
+  weather:
+    permission: SkyEssentials.weather
+    description: sets the weather
+    usage: /<command> <clear|rain|thunder>
+  clearinventory:
+    permission: SkyEssentials.Admin.clearinventory
+    description: clears your inventory
+    usage: /<command> <player>
   vanish:
     permission: SkyEssentials.Admin.vanish
     description: vanish
