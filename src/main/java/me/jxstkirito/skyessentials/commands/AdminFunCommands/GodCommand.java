@@ -1,4 +1,4 @@
-package me.jxstkirito.skyessentials.commands.SinkCommands;
+package me.jxstkirito.skyessentials.commands.AdminFunCommands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
