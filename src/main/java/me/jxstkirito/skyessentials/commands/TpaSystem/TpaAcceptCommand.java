@@ -17,6 +17,11 @@ public class TpaAcceptCommand implements CommandExecutor {
 
         Player player = (Player) sender;
 
+        if(!player.hasPermission("SkyEssentials.Tpaaccept")) {
+            player.sendMessage(ChatColor.RED + " " + ChatColor.BOLD + "You do not have permission to use this command");
+            return true;
+        }
+
         if (!TpaCommand.tpaRequests.containsKey(player)) {
             player.sendMessage(ChatColor.RED + "You have no teleport requests");
             return true;
@@ -25,8 +30,8 @@ public class TpaAcceptCommand implements CommandExecutor {
         Player requester = TpaCommand.tpaRequests.get(player);
         requester.teleport(player.getLocation());
         TpaCommand.tpaRequests.remove(player);
-        player.sendMessage(ChatColor.GREEN + "Teleport request accepted");
-        requester.sendMessage(ChatColor.GREEN + "Teleporting to " + player.getName());
+        player.sendMessage(ChatColor.AQUA + "Teleport request accepted");
+        requester.sendMessage(ChatColor.BLUE + "Teleporting to " + ChatColor.AQUA + player.getName());
 
         return true;
     }

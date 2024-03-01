@@ -23,21 +23,26 @@ public class TpaCommand implements CommandExecutor {
 
         Player player = (Player) sender;
 
+        if(!player.hasPermission("SkyEssentials.Tpa")) {
+            player.sendMessage(ChatColor.RED + " " + ChatColor.BOLD + "You do not have permission to use this command");
+            return true;
+        }
+
         if (args.length != 1) {
-            player.sendMessage(ChatColor.RED + "Usage: /tpa <player>");
+            player.sendMessage(ChatColor.RED + "Usage: " + ChatColor.AQUA + "/tpa <player>");
             return true;
         }
 
         Player target = Bukkit.getPlayer(args[0]);
 
         if (target == null) {
-            player.sendMessage(ChatColor.RED + "Could not find player " + args[0]);
+            player.sendMessage(ChatColor.RED + "Could not find player " + ChatColor.AQUA + args[0]);
             return true;
         }
 
         tpaRequests.put(target, player);
-        target.sendMessage(ChatColor.GREEN + player.getName() + " has sent you a teleport request. Use /tpaccept to accept.");
-        player.sendMessage(ChatColor.GREEN + "Teleport request sent to " + target.getName());
+        target.sendMessage(ChatColor.BLUE + player.getName() + ChatColor.WHITE + " has sent you a teleport request. Use " + ChatColor.AQUA + "/tpaccept" + ChatColor.WHITE + " to accept.");
+        player.sendMessage(ChatColor.BLUE + "Teleport request sent to " + ChatColor.AQUA + target.getName());
 
         return true;
     }

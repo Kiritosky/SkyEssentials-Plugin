@@ -4,9 +4,11 @@ main: me.jxstkirito.skyessentials.SkyEssentials
 api-version: '1.20'
 commands:
   tpa:
+    permission: SkyEssentials.tpa
     description: Request to teleport to another player
     usage: /<command> <player>
   tpaccept:
+    permission: SkyEssentials.tpaccept
     description: Accept a teleport request
     usage: /<command>
   warp:
