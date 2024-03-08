@@ -11,6 +11,7 @@ import me.jxstkirito.skyessentials.commands.WorkbenchCommands.WorkbenchCommand;
 import me.jxstkirito.skyessentials.listener.JoinListerner;
 import me.jxstkirito.skyessentials.listener.LeaveListener;
 import me.jxstkirito.skyessentials.listener.NoCreeperDamageListener;
+import me.jxstkirito.skyessentials.listener.NoEndermanGriefListener;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import java.util.logging.Level;
@@ -24,6 +25,7 @@ public final class SkyEssentials extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new JoinListerner(), this);
         getServer().getPluginManager().registerEvents(new LeaveListener(), this);
         getServer().getPluginManager().registerEvents(new NoCreeperDamageListener(), this);
+        getServer().getPluginManager().registerEvents(new NoEndermanGriefListener(), this);
         getCommand("god").setExecutor(new GodCommand());
         getCommand("feed").setExecutor(new FeedCommand());
         getCommand("gm").setExecutor(new GameModeCommand());
